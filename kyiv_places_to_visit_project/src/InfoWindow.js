@@ -7,7 +7,7 @@ information part and also an attribution*/
 class InfoWindow extends Component {
 	render() {
 		return(
-			<div className='info-window' aria-label="information window about location from wikipedia" tabindex='0'>
+			<div className='info-window' aria-label="information window about location from wikipedia" tabIndex='0'>
 				<div className='info-window-header'>
 			{/*Showing the title of selected marker or selected location from the list*/}
 					<h2 className='info-window-marker-title' aria-label="name of selected location">{this.props.selectedMarker.title} </h2>

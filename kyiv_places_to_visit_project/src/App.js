@@ -112,7 +112,7 @@ componentDidMount() {
 
 /*Catching the Google Maps error*/
   window.gm_authFailure = () => {
-    alert('Sorry! Google maps failed to load!');
+    alert('Sorry! Google maps failed to load! Authentication problem');
   }
 }
 
@@ -243,7 +243,7 @@ getData = (marker) => {
   render() {
     return (
 
-      <div className="App">
+      <main className="App">
 
 {/*Render the header component*/}
         <Header 
@@ -272,7 +272,7 @@ getData = (marker) => {
 {/*Render the map component*/}
         <Map />
 
-      </div>
+      </main>
     );
   }
 }
@@ -286,4 +286,8 @@ function loadJS(src) {
   script.src = src;
   script.async = true;
   ref.parentNode.insertBefore(script, ref);
+
+  script.onerror = function () {
+    alert('Sorry! Google maps failed to load! Please check your Internet connection')
+  };
 }

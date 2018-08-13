@@ -173,7 +173,7 @@ updatefiltredQuery = (query) => {
 				    		onClick={() => this.props.openInfoWindow(location)}
 				    		aria-label="location title"
 				    		role="button"
-				    		tabindex='0'
+				    		tabIndex='0'
 				    		>
 				    		{location.title}
 				    		</li>
