@@ -19,6 +19,9 @@ Clicking on the marker or on the location from the list will open the info windo
 
 ## Notes
 * The project was created with 'create-react-app'
+* The service worker is enabled in the production environment.        
+To test the servise worker you need to build the application (using 'npm run build' command) and run a simple http server from your
+build directory.
 
 ## API used in project
 * Google Map API
